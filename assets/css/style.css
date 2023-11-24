@@ -1,0 +1,130 @@
+
+/* mobile view*/
+@media only screen and (max-width: 600px) {
+    
+    body,h2,h4,h3{
+        margin:0;
+        font-family: 'Poppins', sans-serif;
+    }
+    .container-content{
+        margin-top: 80px;
+    }
+    .content{margin: 20px;}
+     .profile-card{
+            margin: 20px;
+            background-color: #6e7d60;
+            border-radius: 20px;
+            max-width: 100%;
+            padding: 20px;
+            min-height: 200px;
+            color: #f5f0dd;
+        }
+        .profile-card h2{
+            text-align: center;
+        }
+        .profile-card.visi-misi li{
+            line-height: 25px;
+        }
+        .profile hr{border: 1px solid #F6FDC3;}
+
+        .about-logo{
+            border-radius: 49%;
+        }
+        .footer{
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: #6e7d60;
+            
+        
+        }
+        .header{
+            position: fixed;
+            box-sizing: border-box;
+            padding: 5px 5px 5px 20px;
+            height: 60px;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: white;
+            box-shadow: 0 0 10px grey;
+            display: flex;
+        }
+        .header h3{
+            display: inline-block;
+            margin:auto 0 auto 3px;
+            color: #6e7d60;
+        }
+  }
+
+  /* desktop view*/
+
+  @media only screen and (min-width: 601px){
+
+    body,h2,h4,h3{
+        margin:0;
+        font-family: 'Poppins', sans-serif;
+    }
+    .container-content{
+        margin-top: 80px;
+    }
+    .content{margin: 20px;}
+    .container-profile{
+        padding: 10px;
+    }
+    .profile{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+        .profile-card{
+            width: 394px;
+            margin: 10px;
+            background-color: #6e7d60;
+            border-radius: 20px;
+            padding: 20px;
+            color: #f5f0dd;
+            text-align: start;
+            min-height: 200px;
+        }
+        
+        .profile-card h2{
+            text-align: center;
+        }
+        .profile-card.visi-misi li{
+            line-height: 25px;
+        }
+        .profile hr{border: 1px solid #F6FDC3;}
+        .about-logo{
+            border-radius: 49%;
+        }
+        
+        .header{
+            position: fixed;
+            box-sizing: border-box;
+            padding: 5px 5px 5px 20px;
+            height: 60px;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: white;
+            box-shadow: 0 0 10px grey;
+            display: flex;
+        }
+        .header h3{
+            display: inline-block;
+            margin:auto 0 auto 3px;
+            color: #6e7d60;
+   
+     }
+
+     .footer{
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        color: #6e7d60;
+    
+    }
+  }
+
+  
