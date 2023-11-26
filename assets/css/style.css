@@ -1,6 +1,26 @@
 
 .brosur{border-radius: 10px;}
+.container-content .welcome{
+    color:#6e7d60 ;
+    text-align: center;
+    margin: 30px;
+}
+.line{
+    border: 25px solid #6e7d60;
+    margin: 0;
+}
+.line-diskon{
+    text-decoration: line-through rgba(255, 0, 0, 0.801) 2px;
+    font-style: italic;
+}
+.about-logo{
+    border-radius: 49%;
+    border: 1px solid #f5f0dd;
+}
 
+.profile hr{border: 1px solid #F6FDC3;}
+
+.date-promo{font-style: italic;}
 /* mobile view*/
 @media only screen and (max-width: 600px) {
     
@@ -11,7 +31,7 @@
     .container-content{
         margin-top: 80px;
     }
-    .content{margin: 20px;}
+    .content{margin: 0;}
      .profile-card{
             margin: 20px;
             background-color: #6e7d60;
@@ -27,11 +47,28 @@
         .profile-card.visi-misi li{
             line-height: 25px;
         }
-        .profile hr{border: 1px solid #F6FDC3;}
 
-        .about-logo{
-            border-radius: 49%;
+        .container-produk{
+            text-align: center;
+            background-color: #f5f0dd;
+            padding: 90px 0 50px 0;
+            border-top-left-radius: 90px;
+            border-top-right-radius: 90px;
         }
+        .produk{
+            display: inline-block;
+            width: 380px;
+            margin: 20px 10px 20px 10px;
+            background-color: white;
+            border-radius: 20px;
+            padding: 20px 10px 30px 10px;
+            color: #6e7d60;
+            text-align: center;
+            min-height: 200px;
+            box-sizing: border-box;
+            box-shadow: 0 0 15px 2px #6e7d60;
+        }
+
         .footer{
             text-align: center;
             font-size: 20px;
@@ -70,7 +107,6 @@
     .container-content{
         margin-top: 80px;
     }
-    .content{margin: 20px;}
     .container-profile{
         padding: 10px;
     }
@@ -89,6 +125,34 @@
             text-align: start;
             min-height: 200px;
         }
+
+        .container-produk{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #f5f0dd;
+            padding: 90px 0 50px 0;
+            border-top-left-radius: 90px;
+            border-top-right-radius: 90px;
+        }
+
+        .produk{
+            width: 380px;
+            margin: 40px;
+            background-color: white;
+            border-radius: 20px;
+            padding: 10px 10px 15px 10px;
+            color: #6e7d60;
+            text-align: center;
+            min-height: 200px;
+            box-sizing: border-box;
+            box-shadow: 0 0 15px #6e7d60;
+            transition: 1s;
+        }
+        .produk:hover{
+            transform: scale(1.1);
+            box-shadow: 0 0 30px #6e7d60;
+        }
         
         .profile-card h2{
             text-align: center;
@@ -96,11 +160,6 @@
         .profile-card.visi-misi li{
             line-height: 25px;
         }
-        .profile hr{border: 1px solid #F6FDC3;}
-        .about-logo{
-            border-radius: 49%;
-        }
-        
         .header{
             position: fixed;
             box-sizing: border-box;
