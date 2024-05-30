@@ -1,191 +1,407 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-.brosur{border-radius: 10px;}
-.container-content .welcome{
-    color:#6e7d60 ;
-    text-align: center;
-    margin: 30px;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-.line{
-    border: 25px solid #6e7d60;
-    margin: 0;
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
-.line-diskon{
-    text-decoration: line-through rgba(255, 0, 0, 0.801) 2px;
-    font-style: italic;
+body {
+  line-height: 1;
 }
-.about-logo{
-    border-radius: 49%;
-    border: 1px solid #f5f0dd;
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-.profile hr{border: 1px solid #F6FDC3;}
+/* custom style */
 
-.date-promo{font-style: italic;}
+.brosur {
+  border-radius: 10px;
+}
+.container-content .welcome {
+  color: #6e7d60;
+  text-align: center;
+  margin: 30px;
+  font-size: 30px;
+  font-weight: 800;
+}
+.line {
+  border: 25px solid #6e7d60;
+  margin: 0;
+}
+.line-diskon {
+  text-decoration: line-through rgba(255, 0, 0, 0.801) 2px;
+  font-style: italic;
+}
+.about-logo {
+  border-radius: 49%;
+  border: 1px solid #f5f0dd;
+}
+
+.profile hr {
+  border: 1px solid #f6fdc3;
+}
+
+.date-promo {
+  font-style: italic;
+}
 /* mobile view*/
 @media only screen and (max-width: 600px) {
-    
-    body,h2,h4,h3{
-        margin:0;
-        font-family: 'Poppins', sans-serif;
-    }
-    .container-content{
-        margin-top: 80px;
-    }
-    .content{margin: 0;}
-     .profile-card{
-            margin: 20px;
-            background-color: #6e7d60;
-            border-radius: 20px;
-            max-width: 100%;
-            padding: 20px;
-            min-height: 200px;
-            color: #f5f0dd;
-        }
-        .profile-card h2{
-            text-align: center;
-        }
-        .profile-card.visi-misi li{
-            line-height: 25px;
-        }
-
-        .container-produk{
-            text-align: center;
-            background-color: #f5f0dd;
-            padding: 90px 0 50px 0;
-            border-top-left-radius: 90px;
-            border-top-right-radius: 90px;
-        }
-        .produk{
-            display: inline-block;
-            width: 380px;
-            margin: 20px 10px 20px 10px;
-            background-color: white;
-            border-radius: 20px;
-            padding: 20px 10px 30px 10px;
-            color: #6e7d60;
-            text-align: center;
-            min-height: 200px;
-            box-sizing: border-box;
-            box-shadow: 0 0 15px 2px #6e7d60;
-        }
-
-        .footer{
-            text-align: center;
-            font-size: 20px;
-            font-weight: bold;
-            color: #6e7d60;
-            
-        
-        }
-        .header{
-            position: fixed;
-            box-sizing: border-box;
-            padding: 5px 5px 5px 20px;
-            height: 60px;
-            top: 0;
-            left: 0;
-            right: 0;
-            background-color: white;
-            box-shadow: 0 0 10px grey;
-            display: flex;
-        }
-        .header h3{
-            display: inline-block;
-            margin:auto 0 auto 3px;
-            color: #6e7d60;
-        }
+  body,
+  h2,
+  h4,
+  h3 {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  .container-content {
+    margin-top: 80px;
+  }
+  .content {
+    margin: 0;
+  }
+  .profile-card {
+    margin: 20px;
+    background-color: #6e7d60;
+    border-radius: 20px;
+    max-width: 100%;
+    padding: 20px;
+    min-height: 200px;
+    color: #f5f0dd;
+    line-height: 30px;
+    word-spacing: 5px;
+    letter-spacing: 0.5px;
+  }
+  .profile-card h2 {
+    text-align: center;
+  }
+  .profile-card.visi-misi li {
+    line-height: 25px;
+    text-align: justify;
   }
 
-  /* desktop view*/
-
-  @media only screen and (min-width: 601px){
-
-    body,h2,h4,h3{
-        margin:0;
-        font-family: 'Poppins', sans-serif;
-    }
-    .container-content{
-        margin-top: 80px;
-    }
-    .container-profile{
-        padding: 10px;
-    }
-    .profile{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-        .profile-card{
-            width: 394px;
-            margin: 10px;
-            background-color: #6e7d60;
-            border-radius: 20px;
-            padding: 20px;
-            color: #f5f0dd;
-            text-align: start;
-            min-height: 200px;
-        }
-
-        .container-produk{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            background-color: #f5f0dd;
-            padding: 90px 0 50px 0;
-            border-top-left-radius: 90px;
-            border-top-right-radius: 90px;
-        }
-
-        .produk{
-            width: 380px;
-            margin: 40px;
-            background-color: white;
-            border-radius: 20px;
-            padding: 10px 10px 15px 10px;
-            color: #6e7d60;
-            text-align: center;
-            min-height: 200px;
-            box-sizing: border-box;
-            box-shadow: 0 0 15px #6e7d60;
-            transition: 1s;
-        }
-        .produk:hover{
-            transform: scale(1.1);
-            box-shadow: 0 0 30px #6e7d60;
-        }
-        
-        .profile-card h2{
-            text-align: center;
-        }
-        .profile-card.visi-misi li{
-            line-height: 25px;
-        }
-        .header{
-            position: fixed;
-            box-sizing: border-box;
-            padding: 5px 5px 5px 20px;
-            height: 60px;
-            top: 0;
-            left: 0;
-            right: 0;
-            background-color: white;
-            box-shadow: 0 0 10px grey;
-            display: flex;
-        }
-        .header h3{
-            display: inline-block;
-            margin:auto 0 auto 3px;
-            color: #6e7d60;
-   
-     }
-
-     .footer{
-        text-align: center;
-        font-size: 20px;
-        font-weight: bold;
-        color: #6e7d60;
-    
-    }
+  .ml-20 {
+    margin-left: 20px;
+  }
+  .pd-5 {
+    padding: 5px;
   }
 
-  
+  .profile-card .address {
+    text-align: center;
+  }
+
+  .title-produk {
+    font-size: 18px;
+    margin: 10px 0 10px 0;
+  }
+
+  .price {
+    font-size: 15px;
+  }
+
+  .list-custom {
+    margin: 0 10px 0 10px;
+  }
+
+  .list-custom .makna-logo {
+    color: red;
+  }
+
+  .title-makna {
+    font-weight: 600;
+    margin-top: 10px;
+  }
+
+  .makna-arti {
+    margin: 10px 20px 0 20px;
+    text-align: justify;
+  }
+  .container-produk {
+    text-align: center;
+    background-color: #f5f0dd;
+    padding: 90px 0 50px 0;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+  }
+  .produk {
+    display: inline-block;
+    width: 380px;
+    margin: 20px 10px 20px 10px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 10px 30px 10px;
+    color: #6e7d60;
+    text-align: center;
+    min-height: 200px;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px 2px #6e7d60;
+  }
+
+  .footer {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #6e7d60;
+  }
+  .header {
+    position: fixed;
+    box-sizing: border-box;
+    padding: 5px 5px 5px 20px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 0 10px grey;
+    display: flex;
+  }
+  .header h3 {
+    display: inline-block;
+    margin: auto 0 auto 3px;
+    color: #6e7d60;
+  }
+}
+
+/* desktop view*/
+
+@media only screen and (min-width: 601px) {
+  body,
+  h2,
+  h4,
+  h3 {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  .container-content {
+    margin-top: 80px;
+  }
+  .container-profile {
+    padding: 10px;
+  }
+  .profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .profile-card {
+    width: 394px;
+    margin: 10px;
+    background-color: #6e7d60;
+    border-radius: 20px;
+    padding: 20px;
+    color: #f5f0dd;
+    text-align: start;
+    min-height: 200px;
+    word-spacing: 5px;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+  }
+
+  .profile-card .address {
+    text-align: center;
+  }
+  .ml-20 {
+    margin-left: 20px;
+  }
+  .container-produk {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f5f0dd;
+    padding: 90px 0 50px 0;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+  }
+
+  .produk {
+    width: 380px;
+    margin: 40px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 10px 15px 10px;
+    color: #6e7d60;
+    text-align: center;
+    min-height: 200px;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px #6e7d60;
+    transition: 1s;
+  }
+  .produk:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #6e7d60;
+  }
+
+  .profile-card h2 {
+    text-align: center;
+  }
+  .profile-card.visi-misi li {
+    line-height: 25px;
+  }
+  .header {
+    position: fixed;
+    box-sizing: border-box;
+    padding: 5px 5px 5px 20px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 0 10px grey;
+    display: flex;
+  }
+  .header h3 {
+    display: inline-block;
+    margin: auto 0 auto 3px;
+    color: #6e7d60;
+  }
+
+  .footer {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #6e7d60;
+  }
+
+  .title-produk {
+    font-size: 18px;
+    margin: 10px 0 10px 0;
+  }
+
+  .price {
+    font-size: 15px;
+  }
+
+  .list-custom {
+    margin: 0 10px 0 10px;
+  }
+
+  .list-custom .makna-logo {
+    color: red;
+  }
+
+  .title-makna {
+    font-weight: 600;
+    margin-top: 10px;
+  }
+
+  .makna-arti {
+    margin: 10px 20px 0 20px;
+    text-align: justify;
+  }
+}
